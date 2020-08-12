@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+            integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+            crossorigin="anonymous" />
+        <title>eID</title>
+    </head>
+
+    <body>
+        <div class="ui grid width padded">
+            <div class="seven wide column centered">
+
+                <form class="ui form segment">
+                    <p class="ui small header"> Registration Page</p>
+                    <p class="subtext font-small text-left">
+                        * Required fields
+                    </p>
+                    <div class="two fields">
+                        <div class="field">
+                            <label>First Name*</label>
+                            <input placeholder="First Name" name="first-name" type="text">
+                        </div>
+                        <div class="field">
+                            <label>Last Name*</label>
+                            <input placeholder="Last Name" name="last-name" type="text">
+                        </div>
+                    </div>
+                    <div class="two fields">
+                        <div class="field">
+                            <label>eID Number</label>
+                            <input placeholder="eID Number" name="eId Number" type="text">
+                        </div>
+                        <div class="field">
+                            <label>E-mail*</label>
+                            <input type="email" placeholder="ali@gmail.com">
+                        </div>
+                    </div>
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Password*</label>
+                            <input placeholder="****" type="password" name="password">
+                        </div>
+                        <div class="field">
+                            <label>Gender</label>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Gender</div>
+                                <div class="menu">
+                                    <div class="item" data-value="1">Male</div>
+                                    <div class="item" data-value="0">Female</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="terms">
+                            <label>I agree to the Terms and Conditions and the Privacy Policy </label>
+                        </div>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="terms">
+                            <label>I agree to receive promotional actions in progress in stores and on freedelity.be by
+                                e-mail,</label>
+                        </div>
+                    </div>
+                    <div class="ui primary submit button">Submit</div>
+                    <div class="ui error message"></div>
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <script>
+            $('select.dropdown')
+                .dropdown()
+                ;
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+            integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
